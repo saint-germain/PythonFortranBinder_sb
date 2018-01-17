@@ -8,9 +8,10 @@ USER root
 
 # libav-tools for matplotlib anim
 RUN apt-get update && \
-    apt-get install -y gfortran python3-tk && \
+    apt-get install -y gfortran python3-tk x11-apps && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
 ENV DISPLAY localhost:0.0
 VOLUME ["/tmp/.X11-unix:/tmp/.X11-unix"]
+CMD xeyes
