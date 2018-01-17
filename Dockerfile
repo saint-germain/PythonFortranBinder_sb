@@ -12,4 +12,4 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-ENV DISPLAY 127.0.0.1:0.0
+ENV DISPLAY localhost:0.0
