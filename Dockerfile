@@ -11,4 +11,4 @@ RUN apt-get update && \
     apt-get install -y gfortran python3-tk && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* && \
-    export DISPLAY=:0.0
+    export DISPLAY=:0.0 && \
