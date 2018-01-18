@@ -6,6 +6,8 @@ LABEL maintainer="Jupyter Project <jupyter@googlegroups.com>"
 
 USER root
 
+VOLUME /tmp/.X11-unix /tmp/.X11-unix rw
+
 # libav-tools for matplotlib anim
 RUN apt-get update && \
     apt-get install -y gfortran python3-tk x11-apps && \
@@ -13,4 +15,4 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 ENV DISPLAY mymachine.com:0.0
-VOLUME /tmp/.X11-unix /tmp/.X11-unix rw
+
