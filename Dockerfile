@@ -12,5 +12,5 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-ENV DISPLAY :0
+ENV DISPLAY mymachine.com:0.0
 VOLUME /tmp/.X11-unix /tmp/.X11-unix rw
