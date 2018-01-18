@@ -12,6 +12,5 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-ENV DISPLAY localhost:0.0
-VOLUME ["/tmp/.X11-unix:/tmp/.X11-unix"]
-CMD xeyes
+ENV DISPLAY :0
+VOLUME /tmp/.X11-unix:/tmp/.X11-unix
