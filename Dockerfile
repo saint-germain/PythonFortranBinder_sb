@@ -13,4 +13,4 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 ENV DISPLAY :0
-VOLUME /tmp/.X11-unix,rw
+VOLUME /tmp/.X11-unix /tmp/.X11-unix rw
