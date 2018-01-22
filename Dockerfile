@@ -14,5 +14,5 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-ENV DISPLAY mymachine.com:0.0
+ENV DISPLAY localhost:8888
 
