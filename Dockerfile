@@ -13,6 +13,3 @@ RUN apt-get update && \
     apt-get install -y gfortran python3-tk x11-apps x11-xserver-utils python3-pyqt5 && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
-
-ENV DISPLAY localhost:8888
-
